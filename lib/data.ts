@@ -1,20 +1,17 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'anandabhijeet.work@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
+    emailBody: 'Hi Abhijeet, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
     upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/roxylius' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/abhijeet-anand-' },
 ];
 
 export const MY_STACK = {
@@ -44,30 +41,26 @@ export const MY_STACK = {
             icon: '/logo/tailwind.png',
         },
         {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
             name: 'Frammer Motion',
             icon: '/logo/framer-motion.png',
         },
         {
-            name: 'SASS',
-            icon: '/logo/sass.png',
+            name: 'Electron.js',
+            icon: '/logo/electronjs.svg'
         },
         {
             name: 'Bootstrap',
             icon: '/logo/bootstrap.svg',
         },
+        {
+            name: 'Expo [RN Framework]',
+            icon: '/logo/expo.png'
+        }
     ],
     backend: [
         {
             name: 'Node.js',
             icon: '/logo/node.png',
-        },
-        {
-            name: 'Nest.js',
-            icon: '/logo/nest.svg',
         },
         {
             name: 'Express.js',
@@ -105,55 +98,60 @@ export const MY_STACK = {
             name: 'AWS',
             icon: '/logo/aws.png',
         },
+        {
+            name: 'Azure',
+            icon: '/logo/azure.svg'
+        },
+        {
+            name: 'Selenium',
+            icon: '/logo/selenium.png'
+        }
+
     ],
 };
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'MTI Electronics',
-        slug: 'mti-electronics',
-        liveUrl: 'https://mti-electronics.vercel.app/',
+        title: 'ChatGPT API using web scraper',
+        slug: 'unofficial-chatgpt-api',
+        liveUrl: 'https://github.com/roxylius/ChatGPT_unofficial_API_Node ',
         year: 2025,
         description: `
-      A complete agency portfolio platform built for MTI Electronics to showcase their services, blog content, and product offerings. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
-      `,
+    A Node.js + Express backend that automates ChatGPT via Puppeteer to expose an unofficial API for local development and testing.<br/><br/>
+    Key Features:<br/>
+    <ul>
+      <li>🤖 Automated Login: Stealth plugin & headful Chrome with persistent user data</li>
+      <li>💬 Prompt Proxy: Send prompts and receive streamed responses by polling the ChatGPT UI</li>
+      <li>🔗 Thread Continuity: Reuse conversation threadIds to maintain context</li>
+      <li>⚙️ Error Handling: Auth checks via /api/auth/session and UI redirects</li>
+      <li>🔒 Session Persistence: user-data-dir to avoid incognito resets</li>
+    </ul><br/>
+    Technical Highlights:<br/>
+    <ul>
+      <li>📦 Express routes for /api/login and /api/prompt</li>
+      <li>🐒 Puppeteer-extra with stealth to mimic human browsing</li>
+      <li>⏳ Polling logic to detect streaming completion in ChatGPT’s DOM</li>
+      <li>🔍 JSDoc & helper utilities for robust auth & parsing</li>
+    </ul>
+  `,
         role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
-      <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
+     Full-Stack Developer<br/>
+    Responsibilities:<ul>
+      <li>🛠️ Built the Express API with login and prompt endpoints</li>
+      <li>🕵️ Automated ChatGPT UI flows using Puppeteer & stealth evasion</li>
+      <li>🔄 Implemented session reuse and thread management</li>
+      <li>🔧 Developed polling mechanism for streaming LLM output</li>
+      <li>📦 Packaged and documented the tool for local developer use only</li>
+    </ul>
       `,
         techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
+            'Node.js',
+            'Express',
+            'Puppeteer',
+            'puppeteer-extra',
+            'puppeteer-extra-plugin-stealth',
+            'dotenv',
+            'JavaScript'
         ],
         thumbnail: '/projects/thumbnail/mti-electronics.webp',
         longThumbnail: '/projects/long/mti-electronics.webp',
@@ -163,16 +161,17 @@ export const PROJECTS: IProject[] = [
         ],
     },
     {
-        title: 'Epikcart',
-        slug: 'epikcart',
-        techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
+        "title": "Admin Control RBAC",
+        "slug": "admin-rbac",
+        "techStack": [
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Chakra UI",
+            "Passport.js",
+            "TanStack Table",
+            "Framer Motion"
         ],
         thumbnail: '/projects/thumbnail/epikcart.jpg',
         longThumbnail: '/projects/long/epikcart.jpg',
@@ -183,126 +182,57 @@ export const PROJECTS: IProject[] = [
             '/projects/images/epikcart-4.png',
             '/projects/images/epikcart-5.png',
         ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
+        "liveUrl": "https://rbac-frontend-dhbufmcwdbhgagbm.southindia-01.azurewebsites.net",
+        "year": 2024,
+        description: `
+        A full-stack MERN application implementing robust Role-Based Access Control (RBAC) with a responsive Chakra UI frontend, designed for effective user and permissions management.<br/><br/>
+        Key Features:<br/>
+        <ul>
+          <li>👤 User, Role & Permission Management: Admins can perform comprehensive CRUD operations on user accounts, define system roles (e.g., Admin, Dev, Viewer), and assign specific capabilities for granular access control.</li>
+          <li>🔑 Secure Authentication: Supports local (email/password) and social logins (Google, GitHub) via Passport.js for verified user access.</li>
+          <li>🛡️ Session Management: Secure handling of user sessions using <code>express-session</code> with MongoDB as the session store.</li>
+          <li>📜 Activity Logging: Tracks significant user actions and system events for auditing and accountability purposes.</li>
+          <li>📊 Dashboard Overview: Provides a central dashboard presenting key system statistics like user and role counts.</li>
+          <li>📱 Responsive Interface: Built with Chakra UI to ensure a seamless and adaptive user experience across various devices.</li>
+        </ul><br/>
+        Technical Highlights:<br/>
+        <ul>
+          <li>⚛️ Frontend: React, Chakra UI (styling & components), React Router (navigation), TanStack Table (data display), Framer Motion (animations).</li>
+          <li>🟢 Backend: Node.js and Express.js for a robust and scalable server-side application.</li>
+          <li>💾 Database: MongoDB with Mongoose ODM for flexible data modeling and persistence.</li>
+          <li>🛂 Authentication & Authorization: Passport.js (local, Google OAuth 2.0, GitHub OAuth) integrated with custom RBAC logic for precise access control.</li>
+        </ul>`,
+        "role": `
+             Full-Stack Developer<br/>
+    Responsibilities:<ul>
+      <li>🏗️ Led end-to-end development of the RBAC system.</li>
+      <li>🎨 Built responsive frontend for managing users, roles, permissions, and logs.</li>
+      <li>⚙️ Developed secure backend APIs (Node.js, Express.js) for all CRUD operations.</li>
+      <li>🔒 Implemented multi-strategy authentication (Passport.js) & RBAC logic.</li>
+      <li>💾 Designed MongoDB schemas and managed data persistence.</li>
+    </ul>
+        `
     },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
-        techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
-        ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
-        images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
-        techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
-    },
-    {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
-
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
-    },
+    
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Shopify Developer',
+        company: 'Freelance',
+        desc: 'Worked on building E-commerce solutions',
+        duration: 'Dec 2024 - Apr 2025',
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
+        title: 'Product Engineering Intern',
+        company: 'HighRadius',
+        desc: 'Worked mainly as Java Backend Engineer',
+        duration: 'May 2024 - Aug 2024',
+    },
+    {
+        title: 'Software Developer Intern',
+        company: 'Reliance Industries',
+        desc: "Worked mainly with the Node.js and SQL backend with React as Frontend",
         duration: 'Oct 2023 - Nov 2024',
-    },
-    {
-        title: 'FRONTEND ENGINEER',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
     },
 ];
