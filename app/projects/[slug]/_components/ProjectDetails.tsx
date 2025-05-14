@@ -185,7 +185,7 @@ const ProjectDetails = ({ project }: Props) => {
                             className="group relative w-full aspect-[750/400] bg-background-light"
                             style={{
                                 backgroundImage: `url(${image})`,
-                                backgroundSize: 'cover',
+                                backgroundSize: 'contain',
                                 backgroundPosition: 'center 50%',
                                 backgroundRepeat: 'no-repeat',
                             }}

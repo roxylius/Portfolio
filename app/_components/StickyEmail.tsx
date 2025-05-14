@@ -5,7 +5,7 @@ const StickyEmail = () => {
     return (
         <div className="max-xl:hidden fixed bottom-32 left-0 block">
             <a
-                href={`mailto:${GENERAL_INFO.email}`}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${GENERAL_INFO.email}&su=${GENERAL_INFO.emailSubject}&body=${GENERAL_INFO.emailBody}`}
                 className="px-3 text-muted-foreground tracking-[1px] transition-all !bg-bottom hover:text-foreground hover:!bg-center"
                 style={{
                     // background:

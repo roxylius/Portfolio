@@ -81,7 +81,7 @@ const AboutMe = () => {
                                 server-side logic.
 
                             </p>
-                            <p className="mt-3 slide-up-and-fade">
+                            {/* <p className="mt-3 slide-up-and-fade">
                                 My approach emphasizes creating adaptable,
                                 performant, and integrated software solutions.
                                 By prioritizing user-centric design,
@@ -90,7 +90,7 @@ const AboutMe = () => {
                                 I aim to deliver engaging applications
                                 that provide tangible value across
                                 different technological landscapes.
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>

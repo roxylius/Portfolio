@@ -6,7 +6,7 @@ export const GENERAL_INFO = {
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Abhijeet, I am reaching out to you because...',
 
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    upworkProfile: '#',
 };
 
 export const SOCIAL_LINKS = [
@@ -80,10 +80,10 @@ export const MY_STACK = {
             name: 'MongoDB',
             icon: '/logo/mongodb.svg',
         },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
-        },
+        // {
+        //     name: 'Prisma',
+        //     icon: '/logo/prisma.png',
+        // },
     ],
     tools: [
         {
@@ -112,7 +112,7 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'ChatGPT API using web scraper',
+        title: 'Unofficial ChatGPT API',
         slug: 'unofficial-chatgpt-api',
         liveUrl: 'https://github.com/roxylius/ChatGPT_unofficial_API_Node ',
         year: 2025,
@@ -153,11 +153,10 @@ export const PROJECTS: IProject[] = [
             'dotenv',
             'JavaScript'
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
+        thumbnail: '/projects/thumbnail/unofficialGPT.png',
+        longThumbnail: '/projects/thumbnail/unofficialGPT.png',
         images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
+            '/projects/thumbnail/unofficialGPT.png',
         ],
     },
     {
@@ -166,21 +165,21 @@ export const PROJECTS: IProject[] = [
         "techStack": [
             "React",
             "Node.js",
+            "Framer Motion",
             "Express.js",
             "MongoDB",
             "Chakra UI",
             "Passport.js",
             "TanStack Table",
-            "Framer Motion"
         ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
+        thumbnail: '/projects/thumbnail/rbac.jpeg',
+        longThumbnail: '/projects/long/rbac-long.jpg',
         images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
+            '/projects/images/rbac-1.jpeg',
+            '/projects/images/rbac-2.jpeg',
+            '/projects/images/rbac-3.jpeg',
+            '/projects/images/rbac-4.jpeg',
+            '/projects/images/rbac-5.jpeg',
         ],
         "liveUrl": "https://rbac-frontend-dhbufmcwdbhgagbm.southindia-01.azurewebsites.net",
         "year": 2024,
@@ -213,7 +212,107 @@ export const PROJECTS: IProject[] = [
     </ul>
         `
     },
-    
+    {
+        title: 'Clipboard Sync',
+        slug: 'clipboard-sync',
+        liveUrl: 'https://github.com/roxylius/ClipSync-Desktop', // Or your primary repo for this
+        year: 2024, // Based on Aug 2023 – Dec 2023
+        description: `
+        A full-stack application enabling real-time clipboard synchronization across multiple desktop and mobile devices linked to a single user account.<br/><br/>
+        Key Features:<br/>
+        <ul>
+          <li>🔄 Real-Time Sync: Instantly shares clipboard content (text, links) across all connected devices using WebSockets.</li>
+          <li>🖥️ Desktop Application: Built with Electron.js (wrapping React.js) for Windows, macOS, and Linux compatibility.</li>
+          <li>📱 Mobile Application: Developed with React Native for a native Android experience (and extendable to iOS).</li>
+          <li>🔑 Secure Authentication: Features user login, including Google OAuth, to securely link devices to an account.</li>
+          <li>☁️ Cloud-Powered Communication: Leverages a cloud-based backend to facilitate the real-time data exchange between devices.</li>
+          <li>🔗 Single Account, Multiple Devices: Users can seamlessly copy on one device and paste on another registered under their account.</li>
+        </ul><br/>
+        Technical Highlights:<br/>
+        <ul>
+          <li>⚛️ Frontend: React.js (for Electron desktop app), React Native (for Android mobile app).</li>
+          <li>🟢 Backend: Node.js and Express.js serving as the application backbone and API layer.</li>
+          <li>⚡ Real-Time Communication: Socket.io and WebSockets for persistent, bidirectional data flow.</li>
+          <li>🔩 Desktop Wrapper: Electron.js for packaging the web application into a native desktop experience.</li>
+          <li>🛂 Authentication: Passport.js (likely, for Google Auth) integrated for secure user login.</li>
+          <li>💾 Database: MongoDB for storing user accounts, device linking, and potentially session data.</li>
+        </ul>
+  `,
+        role: `
+     Full-Stack Developer<br/>
+    Responsibilities:<ul>
+      <li>🛠️ Engineered the core real-time synchronization mechanism using WebSockets and Node.js.</li>
+      <li>📱 Developed the cross-platform client applications: Electron.js with React for desktop and React Native for Android.</li>
+      <li>🔑 Implemented secure user authentication, including Google OAuth, to manage user accounts and device linking.</li>
+      <li>☁️ Designed and integrated the cloud-based communication channel between devices.</li>
+      <li>⚙️ Managed backend logic, API endpoints, and database interactions (MongoDB) for the system.</li>
+    </ul>
+      `,
+        techStack: [
+            'React Native',
+            'Electron.js',
+            'Socket.io',
+            'React.js',
+            'Node.js',
+            'Express.js',
+            'MongoDB',
+            'Passport.js', // Assumed for Google Auth
+        ],
+        thumbnail: '/projects/thumbnail/clipsync.png',
+        longThumbnail: '/projects/thumbnail/clipsync.png',
+        images: [
+            '/projects/images/clipsync-desk-1.png',
+            '/projects/images/clipsync-desk-2.png',
+            '/projects/images/clipsync-and-1.png',
+            '/projects/images/clipsync-and-2.png',
+        ],
+    },
+    {
+    title: 'Regain Extension',
+    slug: 'regain-extension',
+    liveUrl: 'https://github.com/roxylius/Regain', // Replace with your actual GitHub link
+    year: 2023, // Adjust if needed
+    description: `
+    A Chromium browser extension enabling users to effectively manage their daily time spent on specific websites through configurable limits and persistent settings.<br/><br/>
+    Key Features:<br/>
+    <ul>
+      <li>⏱️ Per-Site Daily Limits: Users define maximum daily browsing time for individual websites.</li>
+      <li>⚙️ Session Duration Control: Set desired usage duration (e.g., 2-15 mins) for each browsing session on a site.</li>
+      <li>🔔 Usage Alerts: Notifies users when their pre-set daily time allocation for a website is consumed.</li>
+      <li>💾 Persistent Configuration: User-defined limits and preferences are saved locally for each website.</li>
+      <li>🚫 Whitelisting Capability: Allows users to exempt specific essential websites from time tracking.</li>
+    </ul><br/>
+    Technical Highlights:<br/>
+    <ul>
+      <li>🛠️ Core Logic: Implemented in JavaScript utilizing Chromium Extension APIs for browser interaction and control.</li>
+      <li>💾 Settings Persistence: Leverages browser local storage to save and retrieve user-defined website configurations.</li>
+      <li>🎨 User Interface: Simple and intuitive popups built with HTML/CSS for easy setting adjustments.</li>
+    </ul>
+  `,
+    role: `
+     Extension Developer<br/>
+    Responsibilities:<ul>
+      <li>Designed and implemented the UI for configuring site-specific time limits.</li>
+      <li>Developed the core JavaScript engine for tracking browsing time and enforcing user-defined limits.</li>
+      <li>Integrated with browser APIs for persistent storage of settings and delivering notifications.</li>
+      <li>Ensured the extension functions reliably across Chromium-based browsers.</li>
+    </ul>
+      `,
+    techStack: [
+        'Chromium Extension APIs',
+        'JavaScript',
+        'HTML',
+        'CSS',
+    ],
+    thumbnail: '/projects/thumbnail/regain.png',
+        longThumbnail: '/projects/thumbnail/regain.png',
+        images: [
+            '/projects/images/regain-1.png',
+            '/projects/images/regain-2.png',
+            '/projects/images/regain-3.png',
+        ],
+}
+
 ];
 
 export const MY_EXPERIENCE = [

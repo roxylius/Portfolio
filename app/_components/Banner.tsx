@@ -59,7 +59,7 @@ const Banner = () => {
                         as="link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href={GENERAL_INFO.upworkProfile}
+                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${GENERAL_INFO.email}&su=${GENERAL_INFO.emailSubject}&body=${GENERAL_INFO.emailBody}`}
                         variant="primary"
                         className="mt-9 banner-button slide-up-and-fade"
                     >
