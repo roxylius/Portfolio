@@ -31,38 +31,38 @@ const ProjectList = () => {
             }
 
             const handleMouseMove = contextSafe?.((e: MouseEvent) => {
-                if (!containerRef.current) return;
-                if (!imageContainer.current) return;
+                // if (!containerRef.current) return;
+                // if (!imageContainer.current) return;
 
-                if (window.innerWidth < 768) {
-                    setSelectedProject(null);
-                    return;
-                }
+                // if (window.innerWidth < 768) {
+                //     setSelectedProject(null);
+                //     return;
+                // }
 
-                const containerRect =
-                    containerRef.current?.getBoundingClientRect();
-                const imageRect =
-                    imageContainer.current.getBoundingClientRect();
-                const offsetTop = e.clientY - containerRect.y;
+                // const containerRect =
+                //     containerRef.current?.getBoundingClientRect();
+                // const imageRect =
+                //     imageContainer.current.getBoundingClientRect();
+                // const offsetTop = e.clientY - containerRect.y;
 
-                // if cursor is outside the container, hide the image
-                if (
-                    containerRect.y > e.clientY ||
-                    containerRect.bottom < e.clientY ||
-                    containerRect.x > e.clientX ||
-                    containerRect.right < e.clientX
-                ) {
-                    return gsap.to(imageContainer.current, {
-                        duration: 0.3,
-                        opacity: 0,
-                    });
-                }
+                // // if cursor is outside the container, hide the image
+                // if (
+                //     containerRect.y > e.clientY ||
+                //     containerRect.bottom < e.clientY ||
+                //     containerRect.x > e.clientX ||
+                //     containerRect.right < e.clientX
+                // ) {
+                //     return gsap.to(imageContainer.current, {
+                //         duration: 0.3,
+                //         opacity: 0,
+                //     });
+                // }
 
-                gsap.to(imageContainer.current, {
-                    y: offsetTop - imageRect.height / 2,
-                    duration: 1,
-                    opacity: 1,
-                });
+                // gsap.to(imageContainer.current, {
+                //     y: offsetTop - imageRect.height / 2,
+                //     duration: 1,
+                //     opacity: 1,
+                // });
             }) as any;
 
             window.addEventListener('mousemove', handleMouseMove);
