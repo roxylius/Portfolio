@@ -317,10 +317,16 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
+        title: 'Web Developer Intern (MERN Stack)',
+        company: 'Ocio',
+        desc: 'Worked on building dashboard and AI-powered Interview solutions',
+        duration: 'Dec 2024 - Present',
+    },
+    {
         title: 'Shopify Developer',
         company: 'Freelance',
         desc: 'Worked on building E-commerce solutions',
-        duration: 'Dec 2024 - Apr 2025',
+        duration: 'Sep 2024 - Dec 2025',
     },
     {
         title: 'Product Engineering Intern',
