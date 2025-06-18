@@ -320,7 +320,7 @@ export const MY_EXPERIENCE = [
         title: 'Web Developer (MERN Stack)',
         company: 'Ocio',
         desc: 'Worked on building dashboard and AI-powered Interview solutions',
-        duration: 'Dec 2024 - Present',
+        duration: 'Oct 2024 - Present',
     },
     {
         title: 'Shopify Developer',
