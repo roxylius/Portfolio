@@ -17,6 +17,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const ProjectDetails = ({ project }: Props) => {
     const containerRef = useRef<HTMLDivElement>(null);
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
     useGSAP(
         () => {
@@ -179,26 +180,30 @@ const ProjectDetails = ({ project }: Props) => {
                     className="fade-in-later relative flex flex-col gap-2 max-w-[800px] mx-auto"
                     id="images"
                 >
-                    {project.images.map((image) => (
+                    {project.images.map((image) => {
+                        const imageUrl = `${basePath}${image}`;
+
+                        return (
                         <div
-                            key={image}
-                            className="group relative w-full aspect-[750/400] bg-background-light"
-                            style={{
-                                backgroundImage: `url(${image})`,
-                                backgroundSize: 'contain',
-                                backgroundPosition: 'center 50%',
-                                backgroundRepeat: 'no-repeat',
-                            }}
-                        >
-                            <a
-                                href={image}
-                                target="_blank"
-                                className="absolute top-4 right-4 bg-background/70 text-foreground size-12 inline-flex justify-center items-center transition-all opacity-0 hover:bg-primary hover:text-primary-foreground group-hover:opacity-100"
+                                key={image}
+                                className="group relative w-full aspect-[750/400] bg-background-light"
+                                style={{
+                                    backgroundImage: `url(${imageUrl})`,
+                                    backgroundSize: 'contain',
+                                    backgroundPosition: 'center 50%',
+                                    backgroundRepeat: 'no-repeat',
+                                }}
                             >
-                                <ExternalLink />
-                            </a>
-                        </div>
-                    ))}
+                                <a
+                                    href={imageUrl}
+                                    target="_blank"
+                                    className="absolute top-4 right-4 bg-background/70 text-foreground size-12 inline-flex justify-center items-center transition-all opacity-0 hover:bg-primary hover:text-primary-foreground group-hover:opacity-100"
+                                >
+                                    <ExternalLink />
+                                </a>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </section>
