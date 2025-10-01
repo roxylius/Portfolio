@@ -30,7 +30,7 @@ const ProjectList = () => {
                 return;
             }
 
-            const handleMouseMove = contextSafe?.((e: MouseEvent) => {
+            const handleMouseMove = contextSafe?.((_event: MouseEvent) => {
                 // if (!containerRef.current) return;
                 // if (!imageContainer.current) return;
 
