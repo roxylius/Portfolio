@@ -25,11 +25,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build Next.js app
+      - name: Build and export Next.js app
         run: pnpm run build
-
-      - name: Export static site
-        run: pnpm run export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
