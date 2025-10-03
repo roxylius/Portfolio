@@ -15,15 +15,17 @@ export type Variant =
     | 'link'
     | 'no-color';
 
+import { StaticImageData } from 'next/image';
+
 export interface IProject {
     title: string;
     year: number;
     description: string;
     role: string;
     techStack: string[];
-    thumbnail: string;
-    longThumbnail: string;
-    images: string[];
+    thumbnail: StaticImageData;
+    longThumbnail: StaticImageData;
+    images: StaticImageData[];
     slug: string;
     liveUrl?: string;
     sourceCode?: string;

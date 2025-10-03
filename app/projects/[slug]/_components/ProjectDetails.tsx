@@ -17,7 +17,6 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const ProjectDetails = ({ project }: Props) => {
     const containerRef = useRef<HTMLDivElement>(null);
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
     useGSAP(
         () => {
@@ -181,11 +180,11 @@ const ProjectDetails = ({ project }: Props) => {
                     id="images"
                 >
                     {project.images.map((image) => {
-                        const imageUrl = `${basePath}${image}`;
+                        const imageUrl = image.src;
 
                         return (
-                        <div
-                                key={image}
+                            <div
+                                key={imageUrl}
                                 className="group relative w-full aspect-[750/400] bg-background-light"
                                 style={{
                                     backgroundImage: `url(${imageUrl})`,

@@ -1,4 +1,41 @@
 import { IProject } from '@/types';
+import awsLogo from '@/public/logo/aws.png';
+import azureLogo from '@/public/logo/azure.svg?url';
+import bootstrapLogo from '@/public/logo/bootstrap.svg?url';
+import dockerLogo from '@/public/logo/docker.svg?url';
+import electronLogo from '@/public/logo/electronjs.svg?url';
+import expoLogo from '@/public/logo/expo.png';
+import expressLogo from '@/public/logo/express.png';
+import framerMotionLogo from '@/public/logo/framer-motion.png';
+import gitLogo from '@/public/logo/git.png';
+import jsLogo from '@/public/logo/js.png';
+import mongodbLogo from '@/public/logo/mongodb.png';
+import mysqlLogo from '@/public/logo/mysql.svg?url';
+import nextLogo from '@/public/logo/next.png';
+import nodeLogo from '@/public/logo/node.png';
+import postgreLogo from '@/public/logo/postgreSQL.png';
+import reactLogo from '@/public/logo/react.png';
+import reduxLogo from '@/public/logo/redux.png';
+import seleniumLogo from '@/public/logo/selenium.png';
+import tailwindLogo from '@/public/logo/tailwind.png';
+import tsLogo from '@/public/logo/ts.png';
+import unofficialGptThumb from '@/public/projects/thumbnail/unofficialGPT.png';
+import rbacThumb from '@/public/projects/thumbnail/rbac.jpeg';
+import rbacLong from '@/public/projects/long/rbac-long.jpeg';
+import rbacImage1 from '@/public/projects/images/rbac-1.jpeg';
+import rbacImage2 from '@/public/projects/images/rbac-2.jpeg';
+import rbacImage3 from '@/public/projects/images/rbac-3.jpeg';
+import rbacImage4 from '@/public/projects/images/rbac-4.jpeg';
+import rbacImage5 from '@/public/projects/images/rbac-5.jpeg';
+import clipsyncThumb from '@/public/projects/thumbnail/clipsync.png';
+import clipsyncImage1 from '@/public/projects/images/clipsync-desk-1.png';
+import clipsyncImage2 from '@/public/projects/images/clipsync-desk-2.png';
+import clipsyncImage3 from '@/public/projects/images/clipsync-and-1.png';
+import clipsyncImage4 from '@/public/projects/images/clipsync-and-2.png';
+import regainThumb from '@/public/projects/thumbnail/regain.png';
+import regainImage1 from '@/public/projects/images/regain-1.png';
+import regainImage2 from '@/public/projects/images/regain-2.png';
+import regainImage3 from '@/public/projects/images/regain-3.png';
 
 export const GENERAL_INFO = {
     email: 'anandabhijeet.work@gmail.com',
@@ -18,67 +55,67 @@ export const MY_STACK = {
     frontend: [
         {
             name: 'Javascript',
-            icon: '/logo/js.png',
+            icon: jsLogo,
         },
         {
             name: 'Typescript',
-            icon: '/logo/ts.png',
+            icon: tsLogo,
         },
         {
             name: 'React',
-            icon: '/logo/react.png',
+            icon: reactLogo,
         },
         {
             name: 'Next.js',
-            icon: '/logo/next.png',
+            icon: nextLogo,
         },
         {
             name: 'Redux',
-            icon: '/logo/redux.png',
+            icon: reduxLogo,
         },
         {
             name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
+            icon: tailwindLogo,
         },
         {
             name: 'Frammer Motion',
-            icon: '/logo/framer-motion.png',
+            icon: framerMotionLogo,
         },
         {
             name: 'Electron.js',
-            icon: '/logo/electronjs.svg'
+            icon: electronLogo,
         },
         {
             name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
+            icon: bootstrapLogo,
         },
         {
             name: 'Expo [RN Framework]',
-            icon: '/logo/expo.png'
+            icon: expoLogo,
         }
     ],
     backend: [
         {
             name: 'Node.js',
-            icon: '/logo/node.png',
+            icon: nodeLogo,
         },
         {
             name: 'Express.js',
-            icon: '/logo/express.png',
+            icon: expressLogo,
         },
     ],
     database: [
         {
             name: 'MySQL',
-            icon: '/logo/mysql.svg',
+            icon: mysqlLogo,
         },
         {
             name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
+            icon: postgreLogo,
         },
         {
             name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
+            icon: mongodbLogo,
         },
         // {
         //     name: 'Prisma',
@@ -88,23 +125,23 @@ export const MY_STACK = {
     tools: [
         {
             name: 'Git',
-            icon: '/logo/git.png',
+            icon: gitLogo,
         },
         {
             name: 'Docker',
-            icon: '/logo/docker.svg',
+            icon: dockerLogo,
         },
         {
             name: 'AWS',
-            icon: '/logo/aws.png',
+            icon: awsLogo,
         },
         {
             name: 'Azure',
-            icon: '/logo/azure.svg'
+            icon: azureLogo,
         },
         {
             name: 'Selenium',
-            icon: '/logo/selenium.png'
+            icon: seleniumLogo,
         }
 
     ],
@@ -153,11 +190,9 @@ export const PROJECTS: IProject[] = [
             'dotenv',
             'JavaScript'
         ],
-        thumbnail: '/projects/thumbnail/unofficialGPT.png',
-        longThumbnail: '/projects/thumbnail/unofficialGPT.png',
-        images: [
-            '/projects/thumbnail/unofficialGPT.png',
-        ],
+        thumbnail: unofficialGptThumb,
+        longThumbnail: unofficialGptThumb,
+        images: [unofficialGptThumb],
     },
     {
         "title": "Admin Control RBAC",
@@ -172,14 +207,14 @@ export const PROJECTS: IProject[] = [
             "Passport.js",
             "TanStack Table",
         ],
-        thumbnail: '/projects/thumbnail/rbac.jpeg',
-        longThumbnail: '/projects/long/rbac-long.jpg',
+        thumbnail: rbacThumb,
+        longThumbnail: rbacLong,
         images: [
-            '/projects/images/rbac-1.jpeg',
-            '/projects/images/rbac-2.jpeg',
-            '/projects/images/rbac-3.jpeg',
-            '/projects/images/rbac-4.jpeg',
-            '/projects/images/rbac-5.jpeg',
+            rbacImage1,
+            rbacImage2,
+            rbacImage3,
+            rbacImage4,
+            rbacImage5,
         ],
         "liveUrl": "https://rbac-frontend-dhbufmcwdbhgagbm.southindia-01.azurewebsites.net",
         "year": 2024,
@@ -258,13 +293,13 @@ export const PROJECTS: IProject[] = [
             'MongoDB',
             'Passport.js', // Assumed for Google Auth
         ],
-        thumbnail: '/projects/thumbnail/clipsync.png',
-        longThumbnail: '/projects/thumbnail/clipsync.png',
+        thumbnail: clipsyncThumb,
+        longThumbnail: clipsyncThumb,
         images: [
-            '/projects/images/clipsync-desk-1.png',
-            '/projects/images/clipsync-desk-2.png',
-            '/projects/images/clipsync-and-1.png',
-            '/projects/images/clipsync-and-2.png',
+            clipsyncImage1,
+            clipsyncImage2,
+            clipsyncImage3,
+            clipsyncImage4,
         ],
     },
     {
@@ -304,12 +339,12 @@ export const PROJECTS: IProject[] = [
         'HTML',
         'CSS',
     ],
-    thumbnail: '/projects/thumbnail/regain.png',
-        longThumbnail: '/projects/thumbnail/regain.png',
+    thumbnail: regainThumb,
+        longThumbnail: regainThumb,
         images: [
-            '/projects/images/regain-1.png',
-            '/projects/images/regain-2.png',
-            '/projects/images/regain-3.png',
+            regainImage1,
+            regainImage2,
+            regainImage3,
         ],
 }
 
