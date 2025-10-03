@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
     basePath: '/Portfolio',
     assetPrefix: '/Portfolio/',
     trailingSlash: true,
-    env: {
-        NEXT_PUBLIC_BASE_PATH: '/Portfolio',
-    },
     images: {
         unoptimized: true,
     },

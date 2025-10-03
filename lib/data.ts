@@ -352,27 +352,27 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Web Developer (MERN Stack)',
-        company: 'Ocio',
-        desc: 'Worked on building dashboard and AI-powered Interview solutions',
-        duration: 'Oct 2024 - Present',
+        title: 'Full Stack Developer (MERN Stack)',
+        company: 'Ocio, Bengaluru',
+        desc: 'Worked on building dashboard and AI-powered Recruitment solutions',
+        duration: 'Feb 2025 - Present',
     },
     {
-        title: 'Shopify Developer',
-        company: 'Freelance',
-        desc: 'Worked on building E-commerce solutions',
-        duration: 'Sep 2024 - Dec 2025',
+        title: 'Frontend Developer',
+        company: 'Yellow.ai, Bengaluru',
+        desc: 'Worked on building AI-powered SaaS for customer Support Automation',
+        duration: 'Aug 2023 - Feb 2025',
     },
     {
-        title: 'Product Engineering Intern',
-        company: 'HighRadius',
-        desc: 'Worked mainly as Java Backend Engineer',
-        duration: 'May 2024 - Aug 2024',
+        title: 'Software Development Intern',
+        company: 'Yellow.ai, Bengaluru',
+        desc: 'Learned and built, shipped production ready AI-powered features',
+        duration: 'May 2023 - Aug 2023',
     },
     {
         title: 'Software Developer Intern',
-        company: 'Reliance Industries',
-        desc: "Worked mainly with the Node.js and SQL backend with React as Frontend",
-        duration: 'Oct 2023 - Nov 2024',
+        company: 'Reliance Industries, Jamnagar',
+        desc: "Worked on build an Asset Maintainence System with MERN Stack",
+        duration: 'Jan 2023 - Mar 2023',
     },
 ];
